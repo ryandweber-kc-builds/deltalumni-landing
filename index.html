@@ -254,22 +254,22 @@
     <div class="sec-head">
       <p class="eyebrow">Where to start</p>
       <h2>Two ways in</h2>
-      <p class="lede">One of these is time-limited and one is open to every alumnus. Neither requires the other.</p>
+      <p class="lede">Applications for the Founding Committee closed October 9. Membership is open to every alumnus.</p>
     </div>
     <div class="doors">
 
       <article class="card" id="serve">
         <div class="label">Serve</div>
         <h3>The Founding Committee</h3>
-        <p class="lede">Roughly a dozen alumni will actually run this. One seat is filled. The rest are open, and we would rather they go to the men who raise their hands.</p>
+        <p class="lede">Roughly a dozen alumni will actually run this. Applications are no longer being accepted. Thank you to every brother who raised his hand.</p>
         <ul>
           <li><b>What it decides:</b> how dues revenue is allocated, how regional volunteer leadership works, what success looks like and how it is measured, and how the rest of the Founding Committee gets built.</li>
-          <li><b>Who we need:</b> recent graduates, mid-career and senior alumni, house corporation members and chapter advisors by name, and regional leaders across the country.</li>
+          <li><b>What happens next:</b> every application is being reviewed together, so an early application and a last-day application carry the same weight. Every applicant will hear from us by the end of October, either way.</li>
           <li><b>The commitment:</b> roughly 2 to 4 hours a month on a one-year term, most of it by virtual meetings.</li>
         </ul>
         <button class="more" onclick="expand(this)" aria-expanded="false">More about this</button>
-        <div class="meta">Applications close October 9</div>
-        <a class="btn btn-purple" href="https://forms.gle/jpt32k8k72G7RCZJ9" id="btn-serve">Apply for the Founding Committee</a>
+        <div class="meta">Applications closed October 9</div>
+        <span class="btn" role="link" aria-disabled="true" style="text-align:center">No longer accepting applications</span>
       </article>
 
       <article class="card" id="membership">
@@ -356,7 +356,7 @@
     </details>
     <details>
       <summary>Who runs this Association?</summary>
-      <div class="a"><p>A Founding Committee of roughly a dozen alumni, being seated this fall through the application on this page. The Arch Chapter, Central Office, and the Educational Foundation each hold a non-voting liaison seat. Officer roles, term lengths, and the reporting cadence are among the first things the Founding Committee will settle, and they will be published here when they are.</p></div>
+      <div class="a"><p>A Founding Committee of roughly a dozen alumni, being seated this fall from the applications that closed October 9. The Arch Chapter, Central Office, and the Educational Foundation each hold a non-voting liaison seat. Officer roles, term lengths, and the reporting cadence are among the first things the Founding Committee will settle, and they will be published here when they are.</p></div>
     </details>
     <details>
       <summary>What happens to my information?</summary>
@@ -370,7 +370,7 @@
   <div class="wrap">
     <p class="eyebrow">What comes next</p>
     <h2>This page is temporary. The Association is not.</h2>
-    <p>The full Delt Alumni Association section of delts.org is being built now, in the Fraternity's refreshed brand, alongside a member area inside myDelt where you will see your membership and your events. This page exists so that the Founding Committee application and membership are not waiting on a website.</p>
+    <p>The full Delt Alumni Association section of delts.org is being built now, in the Fraternity's refreshed brand, alongside a member area inside myDelt where you will see your membership and your events. This page exists so that membership and news of the Founding Committee are not waiting on a website.</p>
   </div>
 </section>
 
@@ -390,7 +390,7 @@
       <div>
         <h4>Get involved</h4>
         <ul>
-          <li><a href="https://forms.gle/jpt32k8k72G7RCZJ9">Apply for the Founding Committee</a></li>
+          <li><a href="#serve">The Founding Committee</a></li>
           <li><a href="#membership">Become a Founding Member</a></li>
         </ul>
       </div>
@@ -412,10 +412,9 @@
   function toggleNav(b){var n=document.getElementById('navlinks');var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)}
   function expand(b){var c=b.closest('.card');c.classList.add('expanded');b.setAttribute('aria-expanded','true');b.style.display='none'}
   document.querySelectorAll('#navlinks a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('navlinks').classList.remove('open')})});
-  /* Analytics events: both buttons as distinct conversions. No-op until GA4 is enabled. */
+  /* Analytics events. The Founding Committee application closed October 9, so only the join button is tracked. */
   function track(n){if(window.gtag){gtag('event',n)}}
   document.getElementById('btn-join').addEventListener('click',function(){track('click_join')});
-  document.getElementById('btn-serve').addEventListener('click',function(){track('click_apply_committee')});
 </script>
 </body>
 </html>
