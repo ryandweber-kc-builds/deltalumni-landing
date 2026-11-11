@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Delt Alumni Association | Delta Tau Delta</title>
-<meta name="description" content="Delt Alumni Association (Delta Tau Delta Alumni Association). We have told every man that brotherhood lasts a lifetime. This is how we finally build the way to prove it.">
+<meta name="description" content="Delt Alumni Association. We have told every man that brotherhood lasts a lifetime. This is how we finally build the way to prove it.">
 <link rel="canonical" href="https://alumni.delts.org/">
 <meta property="og:title" content="Delt Alumni Association">
-<meta property="og:description" content="Brotherhood, for life. Announced at Karnea, August 2026, and being built in the open with the alumni who join it.">
+<meta property="og:description" content="Brotherhood: For Life. Announced at Karnea, August 2026, and being built in the open with the alumni who join it.">
 <meta property="og:url" content="https://alumni.delts.org/">
 <meta property="og:type" content="website">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"Delt Alumni Association","alternateName":"Delta Tau Delta Alumni Association","url":"https://alumni.delts.org/","parentOrganization":{"@type":"Organization","name":"Delta Tau Delta","url":"https://www.delts.org/"}}
+{"@context":"https://schema.org","@type":"Organization","name":"Delt Alumni Association","url":"https://alumni.delts.org/","parentOrganization":{"@type":"Organization","name":"Delta Tau Delta","url":"https://www.delts.org/"}}
 </script>
 <meta name="twitter:card" content="summary_large_image">
 <!-- OG image: add <meta property="og:image" content="https://alumni.delts.org/og.png"> once a 1200x630 image exists in the repo. -->
@@ -75,6 +75,8 @@
   .nav-links a{color:var(--midnight);text-decoration:none;font-weight:600;font-size:14px}
   .nav-links a:hover{color:var(--purple)}
   .nav .btn{min-height:42px;padding:8px 22px;font-size:14px}
+  .lockup .word,.nav-links a{white-space:nowrap}
+  @media (max-width:1100px){.nav-links{gap:18px}.lockup .word{font-size:18px}.nav .btn{padding:8px 18px}}
   .menu-btn{display:none;background:none;border:2px solid var(--purple);border-radius:8px;padding:8px 12px;font:inherit;font-weight:700;color:var(--purple);cursor:pointer}
   @media (max-width:900px){
     .nav-links{display:none;position:absolute;left:0;right:0;top:74px;background:var(--white);flex-direction:column;gap:0;border-bottom:1px solid var(--stone);padding:8px 24px 16px}
@@ -83,8 +85,10 @@
     .nav-links li.cta{display:none}
     .menu-btn{display:block}
     .utility .wrap{justify-content:center;gap:20px}
-    .lockup .word{font-size:19px}
+    .lockup .word{font-size:16px;letter-spacing:.04em}.lockup svg{width:32px;height:34px}.lockup .sub{white-space:nowrap;font-size:8px;letter-spacing:.16em}
   }
+
+  @media (max-width:360px){.lockup .word{font-size:14px;letter-spacing:.02em}.lockup .sub{display:none}.menu-btn{padding:6px 10px}.nav .wrap{gap:10px}}
 
   /* Module 02: hero */
   .hero{background:var(--purple);color:var(--white);position:relative;overflow:hidden}
@@ -136,6 +140,24 @@
     .card.expanded li{display:block}
     .more{display:inline-block;background:none;border:0;padding:12px 0;min-height:44px;font:inherit;font-weight:700;color:var(--burnt);cursor:pointer;text-decoration:underline}
   }
+
+  /* Module 04: single membership card */
+  .card.join{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center}
+  .card.join ul{margin:0}
+  .card.join li:first-child{border-top:0;padding-top:0}
+  .card.join .meta{padding-top:0;margin-bottom:0}
+  @media (max-width:900px){.card.join{grid-template-columns:1fr;gap:20px}}
+
+  /* Module 04c: committee updates */
+  .log{list-style:none;margin:0;padding:0;border-top:2px solid var(--gold)}
+  .log li{display:grid;grid-template-columns:220px 1fr;gap:32px;padding:28px 0;border-bottom:1px solid var(--stone)}
+  .log .when{font-family:var(--display);text-transform:uppercase;font-size:18px;letter-spacing:.04em;color:var(--purple);font-weight:600;line-height:1.2}
+  .log .when span{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.14em;color:var(--burnt);font-weight:700;margin-top:6px}
+  .log .upnext .when{color:var(--burnt)}
+  .log h3{font-size:24px;color:var(--purple);font-weight:600;margin:0 0 8px}
+  .log p{margin:0;max-width:66ch;font-size:16.5px}
+  .log a{font-weight:600}
+  @media (max-width:700px){.log li{grid-template-columns:1fr;gap:8px;padding:22px 0}}
 
   /* Module 04b: Founding Committee roster */
   .roster-sec{background:var(--white);border-top:1px solid var(--stone);border-bottom:1px solid var(--stone)}
@@ -229,18 +251,18 @@
   <a href="mailto:alumni@delts.org">Contact</a>
 </div></div>
 <header class="nav"><div class="wrap">
-  <a class="lockup" href="#top" aria-label="Delta Tau Delta Alumni Association">
+  <a class="lockup" href="#top" aria-label="Delt Alumni Association">
     <svg viewBox="0 0 38 40" aria-hidden="true"><path d="M2 2h34v20c0 9-8 15-17 16C10 37 2 31 2 22V2z" fill="#412B69" stroke="#C9A84C" stroke-width="2"/><path d="M19 9l9 18H10z" fill="none" stroke="#C9A84C" stroke-width="2.2"/></svg>
-    <span><span class="word">Delta Tau Delta</span><span class="sub">Alumni Association</span></span>
+    <span><span class="word">Delt Alumni Association</span><span class="sub">Delta Tau Delta Fraternity</span></span>
   </a>
   <button class="menu-btn" aria-expanded="false" aria-controls="navlinks" onclick="toggleNav(this)">Menu</button>
   <ul class="nav-links" id="navlinks">
-    <li><a href="#doors">Two ways in</a></li>
-    <li><a href="#committee">Founding Committee</a></li>
-    <li><a href="#what">What this is</a></li>
     <li><a href="#membership">Membership</a></li>
+    <li><a href="#committee">Committee</a></li>
+    <li><a href="#updates">Updates</a></li>
+    <li><a href="#what">What this is</a></li>
     <li><a href="#faq">Questions</a></li>
-    <li class="cta"><a class="btn btn-gold" href="#doors">Get involved</a></li>
+    <li class="cta"><a class="btn btn-gold" href="#membership">Join</a></li>
   </ul>
 </div></header>
 
@@ -252,7 +274,7 @@
   <svg class="shield" viewBox="0 0 38 40" aria-hidden="true"><path d="M2 2h34v20c0 9-8 15-17 16C10 37 2 31 2 22V2z" fill="none" stroke="#C9A84C" stroke-width="1"/><path d="M19 9l9 18H10z" fill="none" stroke="#C9A84C" stroke-width="1"/></svg>
   <div class="wrap">
     <p class="eyebrow">Delt Alumni Association</p>
-    <h1>Brotherhood, for life.</h1>
+    <h1>Brotherhood: For Life.</h1>
     <p class="sub">We have told every man that brotherhood lasts a lifetime. This is how we finally build the way to prove it.</p>
     <p class="stand"><b>Announced at Karnea, August 2026.</b> The Association is being built in the open, with alumni, rather than waiting until it is perfect.</p>
   </div>
@@ -269,46 +291,29 @@
   <p class="line">That gap is not a measure of how much Delts care. It is a measure of how few doors we have built.</p>
 </section>
 
-<!-- ============ MODULE 04: TWO WAYS IN ============ -->
+<!-- ============ MODULE 04: MEMBERSHIP ============ -->
 <section class="pad" id="doors">
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Where to start</p>
-      <h2>Two ways in</h2>
-      <p class="lede">The Founding Committee is seated. Membership is open to every alumnus.</p>
+      <h2>Become a Founding Member</h2>
+      <p class="lede">Membership is open to every Delt alumnus.</p>
     </div>
-    <div class="doors">
-
-      <article class="card" id="serve">
-        <div class="label">Serve</div>
-        <h3>The Founding Committee</h3>
-        <p class="lede">The Founding Committee is seated and begins its work in December. Thank you to every brother who raised his hand.</p>
-        <ul>
-          <li><b>What it decides:</b> how the Association is structured and governed, what the member experience looks like, whether and when dues are introduced, and how the first operating committee is elected.</li>
-          <li><b>What happens next:</b> the Founding Committee meets for the first time in December 2026. Its charge over the next year is to design the Association, and you will hear from us as those decisions are made.</li>
-          <li><b>The commitment:</b> roughly 2 to 4 hours a month on a one-year term, most of it by virtual meetings.</li>
-        </ul>
-        <button class="more" onclick="expand(this)" aria-expanded="false">More about this</button>
-        <div class="meta">Seated November 2026</div>
-        <a class="btn btn-gold" href="#committee">Meet the Founding Committee</a>
-      </article>
-
-      <article class="card" id="membership">
-        <div class="label">Belong</div>
-        <h3>Become a Founding Member</h3>
-        <p class="lede">Membership is open to every Delt alumnus.</p>
+    <article class="card join" id="membership">
+      <div class="join-body">
         <ul>
           <li><b>What you get:</b> A say in what this becomes. The Founding Committee is building member benefits in the order alumni ranked them in the survey: professional development, community, lifestyle and travel, health and wellbeing, and financial planning. Members hear about each one as it becomes real, not before.</li>
-          <li><b>What it costs:</b> There are no costs during the founding period. The Founding Committee will set dues later, and members will be told the amount before they are asked to pay. Once dues begin, they will fund specific initiatives, including a regional rally program, chapter-level alumni events, and the national database that helps connect members with each other.</li>
-          <li><b>Founding Members:</b> Everyone who joins before dues begin is a Founding Member of the Association. That is a permanent part of your record, and it means you were here when the building started.</li>
+          <li><b>What it costs:</b> Nothing. No dues are collected during the founding period, and no decisions on dues have been made. That work belongs to the Founding Committee, and members will hear what it decides.</li>
+          <li><b>Founding Members:</b> Everyone who joins during the founding period is a Founding Member of the Association. It means you were here when the building started.</li>
         </ul>
         <button class="more" onclick="expand(this)" aria-expanded="false">More about this</button>
-        <div class="meta">Dues: Free during the founding period</div>
+      </div>
+      <div class="join-act">
+        <div class="meta">No dues during the founding period</div>
         <a class="btn btn-purple" href="https://portal.delts.org/join-naa" id="btn-join">Join the Association</a>
         <p class="note">Joining is free and no payment is collected. You will sign in to myDelt first. If you have never used myDelt, you will be asked to claim your account before the form appears. It takes about two minutes and uses the email the Fraternity has on file. <a href="https://deltataudeltaeducationalfoundation.my.site.com/claimaccount/s/">Claim your account here.</a></p>
-      </article>
-
-    </div>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -348,6 +353,22 @@
   </div>
 </section>
 
+<!-- ============ MODULE 04c: COMMITTEE UPDATES ============ -->
+<!-- To post an update: copy one <li> block, put it at the top of the list (under "Up next"), and change the date, title and text. Newest first. -->
+<section class="pad" id="updates">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Built in the open</p>
+      <h2>Committee updates</h2>
+      <p class="lede">This is where the Founding Committee reports its work, newest first.</p>
+    </div>
+    <ol class="log">
+      <li class="upnext"><div class="when">Up next<span>December 2026</span></div><div class="what"><h3>First meeting of the Founding Committee</h3><p>The Founding Committee meets for the first time. Its first job is to define what the Association offers alumni and present that to the Arch Chapter.</p></div></li>
+      <li><div class="when">November 11, 2026</div><div class="what"><h3>The Founding Committee is seated</h3><p>Eight alumni and three liaisons will lead the Association through its first year. <a href="#committee">See the Founding Committee.</a></p></div></li>
+    </ol>
+  </div>
+</section>
+
 <!-- ============ MODULE 05: WHAT THIS IS / ISN'T ============ -->
 <section class="isnt" id="what">
   <div class="col is">
@@ -359,7 +380,7 @@
   <div class="col not on-dark">
     <h2>What this isn't</h2>
     <p><b>Not a new layer above your work.</b> House corporation members and chapter advisors are already doing this work. The Association is built to give you more support, not more oversight. Central Office enables; alumni own.</p>
-    <p><b>Not a fundraising ask.</b> Dues are a value exchange, not a donation. Giving to the Educational Foundation is a separate thing and stays separate.</p>
+    <p><b>Not a fundraising ask.</b> Joining is free, and no decisions on dues have been made. Giving to the Educational Foundation is a separate thing and stays separate.</p>
     <p><b>Not finished.</b> Several things on this page are still being decided, and we would rather say so than pretend otherwise.</p>
   </div>
 </section>
@@ -401,11 +422,11 @@
     
     <details>
       <summary>Is this just fundraising with better branding?</summary>
-      <div class="a"><p>No. Membership is free during the founding period, and nothing on this page asks you for money. When the Founding Committee sets dues, they will pay for things you can name: the regional rally program, alumni programming at the chapter level, and the national database that makes finding your people possible. You will get something specific for your money, which is exactly why dues will not be a gift and will not be tax-deductible. Giving to the Educational Foundation is separate, run by a separate organization, and it stays that way.</p></div>
+      <div class="a"><p>No. Membership is free during the founding period, and nothing on this page asks you for money. No decisions on dues have been made. Whether, when, and how dues are introduced is the Founding Committee's to decide, and members will hear what it decides. Giving to the Educational Foundation is separate, run by a separate organization, and it stays that way.</p></div>
     </details>
     <details>
       <summary>We have heard promises like this before. Why is this different?</summary>
-      <div class="a"><p>Fair. Several initiatives have launched with fanfare and faded, and we are not going to pretend otherwise. Two things are different this time. First, it is being built in the open: this page tells you what has not been decided yet rather than hiding it. Second, it is not being built by Central Office alone. The Founding Committee is alumni, the decisions are theirs, and the first thing they will decide is what success looks like and how it gets measured. If that measure is not met, you will know.</p></div>
+      <div class="a"><p>Fair. Several initiatives have launched with fanfare and faded, and we are not going to pretend otherwise. Two things are different this time. First, it is being built in the open: this page tells you what has not been decided yet rather than hiding it. Second, it is not being built by Central Office alone. The Founding Committee is alumni, the decisions are theirs, and their first job is to define what the Association offers alumni, present that to the Arch Chapter, and decide what success looks like and how it gets measured. If that measure is not met, you will know.</p></div>
     </details>
     <details>
       <summary>I already have my own Delt network. Why do I need this?</summary>
@@ -438,17 +459,18 @@
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <a class="lockup" href="#top" aria-label="Delta Tau Delta Alumni Association">
+        <a class="lockup" href="#top" aria-label="Delt Alumni Association">
           <svg viewBox="0 0 38 40" aria-hidden="true"><path d="M2 2h34v20c0 9-8 15-17 16C10 37 2 31 2 22V2z" fill="none" stroke="#C9A84C" stroke-width="2"/><path d="M19 9l9 18H10z" fill="none" stroke="#C9A84C" stroke-width="2.2"/></svg>
-          <span><span class="word">Delta Tau Delta</span><span class="sub">Alumni Association</span></span>
+          <span><span class="word">Delt Alumni Association</span><span class="sub">Delta Tau Delta Fraternity</span></span>
         </a>
-        <p class="desc">Brotherhood, for life. Announced at Karnea, August 2026, and being built in the open with the alumni who join it.</p>
+        <p class="desc">Brotherhood: For Life. Announced at Karnea, August 2026, and being built in the open with the alumni who join it.</p>
       </div>
       <div>
         <h4>Get involved</h4>
         <ul>
           <li><a href="#committee">The Founding Committee</a></li>
           <li><a href="#membership">Become a Founding Member</a></li>
+          <li><a href="#updates">Committee updates</a></li>
         </ul>
       </div>
       <div>
