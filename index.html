@@ -137,6 +137,26 @@
     .more{display:inline-block;background:none;border:0;padding:12px 0;min-height:44px;font:inherit;font-weight:700;color:var(--burnt);cursor:pointer;text-decoration:underline}
   }
 
+  /* Module 04b: Founding Committee roster */
+  .roster-sec{background:var(--white);border-top:1px solid var(--stone);border-bottom:1px solid var(--stone)}
+  .roster{width:100%;border-collapse:collapse;font-size:16px}
+  .roster caption{text-align:left;font-family:var(--display);text-transform:uppercase;font-size:22px;letter-spacing:.03em;color:var(--purple);font-weight:600;padding:34px 0 12px}
+  .roster th{text-align:left;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--burnt);padding:10px 16px 10px 0;border-bottom:2px solid var(--gold)}
+  .roster td{padding:16px 16px 16px 0;border-bottom:1px solid var(--pale);vertical-align:top}
+  .roster td.who b{display:block;color:var(--purple);font-size:17px}
+  .roster td.who span{display:block;font-size:13px;color:#4a4458;margin-top:2px}
+  .roster td.yr{font-variant-numeric:tabular-nums}
+  .roster col.c-who{width:34%}.roster col.c-ch{width:20%}.roster col.c-sc{width:32%}.roster col.c-yr{width:14%}
+  @media (max-width:700px){
+    .roster,.roster tbody,.roster tr,.roster td,.roster caption{display:block;width:100%}
+    .roster colgroup{display:none}
+    .roster thead{position:absolute;left:-9999px}
+    .roster tr{padding:16px 0;border-bottom:1px solid var(--pale)}
+    .roster td{padding:2px 0;border:0;font-size:15.5px}
+    .roster td.who{padding-bottom:6px}
+    .roster td[data-l]::before{content:attr(data-l) ": ";font-weight:700;color:var(--burnt);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+  }
+
   /* Module 05: is / isn't */
   .isnt{display:grid;grid-template-columns:1fr 1fr}
   .col{padding:64px 56px}
@@ -216,6 +236,7 @@
   <button class="menu-btn" aria-expanded="false" aria-controls="navlinks" onclick="toggleNav(this)">Menu</button>
   <ul class="nav-links" id="navlinks">
     <li><a href="#doors">Two ways in</a></li>
+    <li><a href="#committee">Founding Committee</a></li>
     <li><a href="#what">What this is</a></li>
     <li><a href="#membership">Membership</a></li>
     <li><a href="#faq">Questions</a></li>
@@ -291,6 +312,40 @@
   </div>
 </section>
 
+<!-- ============ MODULE 04b: FOUNDING COMMITTEE ROSTER ============ -->
+<section class="pad roster-sec" id="committee">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Who is leading the first year</p>
+      <h2>The Founding Committee</h2>
+      <p class="lede">These are the alumni seated on the Founding Committee for a term of about one year. Their first meeting is in December 2026.</p>
+    </div>
+    <table class="roster">
+      <colgroup><col class="c-who"><col class="c-ch"><col class="c-sc"><col class="c-yr"></colgroup>
+      <thead><tr><th scope="col">Name</th><th scope="col">Chapter</th><th scope="col">School</th><th scope="col">Grad year</th></tr></thead>
+      <tbody>
+        <tr><td class="who"><b>Ryan Weber</b><span>Chair</span></td><td data-l="Chapter">Gamma Chi</td><td data-l="School">Kansas State University</td><td class="yr" data-l="Grad year">2005</td></tr>
+        <tr><td class="who"><b>Mike Perros</b><span>Vice Chair</span></td><td data-l="Chapter">Delta Epsilon</td><td data-l="School">University of Kentucky</td><td class="yr" data-l="Grad year">1981</td></tr>
+        <tr><td class="who"><b>Lucas Dart</b><span>Treasurer</span></td><td data-l="Chapter">Theta Kappa</td><td data-l="School">University of Nebraska at Kearney</td><td class="yr" data-l="Grad year">1997</td></tr>
+        <tr><td class="who"><b>Shawn Selby</b><span>Secretary and Communications</span></td><td data-l="Chapter">Epsilon Upsilon</td><td data-l="School">Marietta College</td><td class="yr" data-l="Grad year">1992</td></tr>
+        <tr><td class="who"><b>Matthew Wilson</b><span>Member at Large</span></td><td data-l="Chapter">Beta Upsilon</td><td data-l="School">University of Illinois</td><td class="yr" data-l="Grad year">1989</td></tr>
+        <tr><td class="who"><b>Tony Quandt</b><span>Member at Large</span></td><td data-l="Chapter">Beta Psi</td><td data-l="School">Wabash College</td><td class="yr" data-l="Grad year">2004</td></tr>
+        <tr><td class="who"><b>Collin Dickson</b><span>Member at Large</span></td><td data-l="Chapter">Beta Upsilon</td><td data-l="School">University of Illinois</td><td class="yr" data-l="Grad year">2012</td></tr>
+        <tr><td class="who"><b>Ben Wilson</b><span>Member at Large</span></td><td data-l="Chapter">Zeta</td><td data-l="School">Case Western Reserve University</td><td class="yr" data-l="Grad year">2025</td></tr>
+      </tbody>
+    </table>
+    <table class="roster">
+      <caption>Liaisons</caption>
+      <colgroup><col class="c-who"><col class="c-ch"><col class="c-sc"><col class="c-yr"></colgroup>
+      <thead><tr><th scope="col">Name</th><th scope="col">Chapter</th><th scope="col">School</th><th scope="col">Grad year</th></tr></thead>
+      <tbody>
+        <tr><td class="who"><b>Arthur &ldquo;Von&rdquo; vonWerssowetz</b><span>Arch Chapter Liaison</span></td><td data-l="Chapter">Delta Delta</td><td data-l="School">University of Tennessee</td><td class="yr" data-l="Grad year">2005</td></tr>
+      </tbody>
+    </table>
+    <p class="foot">Liaisons hold non-voting seats. The Educational Foundation Liaison will be named here once seated.</p>
+  </div>
+</section>
+
 <!-- ============ MODULE 05: WHAT THIS IS / ISN'T ============ -->
 <section class="isnt" id="what">
   <div class="col is">
@@ -356,7 +411,7 @@
     </details>
     <details>
       <summary>Who runs this Association?</summary>
-      <div class="a"><p>A Founding Committee of roughly a dozen alumni, being seated this fall from the applications that closed October 9. The Arch Chapter, Central Office, and the Educational Foundation each hold a non-voting liaison seat. Officer roles, term lengths, and the reporting cadence are among the first things the Founding Committee will settle, and they will be published here when they are.</p></div>
+      <div class="a"><p>The Founding Committee, seated this fall from more than 100 applications. <a href="#committee">See who is on it.</a> The Arch Chapter, Central Office, and the Educational Foundation each hold a non-voting liaison seat. Term lengths and the reporting cadence are among the first things the Founding Committee will settle, and they will be published here when they are.</p></div>
     </details>
     <details>
       <summary>What happens to my information?</summary>
@@ -390,7 +445,7 @@
       <div>
         <h4>Get involved</h4>
         <ul>
-          <li><a href="#serve">The Founding Committee</a></li>
+          <li><a href="#committee">The Founding Committee</a></li>
           <li><a href="#membership">Become a Founding Member</a></li>
         </ul>
       </div>
